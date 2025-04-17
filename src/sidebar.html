@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sidepanel</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="p-4 bg-gray-50 min-h-screen">
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold text-gray-700 mb-2">Select Program:</h3>
+    <select id="programSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      <option value="">Choose a program...</option>
+      <option value="program1">Program 1</option>
+      <option value="program2">Program 2</option>
+      <option value="program3">Program 3</option>
+    </select>
+  </div>
+
+  <div id="controlPanel" class="space-y-4">
+    <h3 id="programName" class="text-xl font-bold text-gray-800"></h3>
+    <p id="programDescription" class="text-gray-600"></p>
+    <div class="flex space-x-4">
+      <button id="startBtn" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">Start</button>
+      <button id="stopBtn" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">Stop</button>
+    </div>
+    <div class="mt-6">
+      <h4 class="text-lg font-semibold text-gray-700 mb-2">Log:</h4>
+      <div id="logContent" class="p-4 bg-gray-100 rounded-lg min-h-[200px] max-h-[400px] overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+
+</html>
